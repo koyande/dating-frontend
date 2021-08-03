@@ -3,7 +3,7 @@ version: 0.2
 env:
     variables:
         CACHE_CONTROL: "86400"
-        S3_BUCKET: "http://datingapp-s3-frontend.s3-website.us-east-2.amazonaws.com/"
+        S3_BUCKET: "https://s3.console.aws.amazon.com/s3/buckets/angular-app-bucket-latest?region=ap-south-1&tab=objects"
         BUILD_FOLDER: "dist"
 phases:
   install:
