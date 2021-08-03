@@ -9,16 +9,17 @@ phases:
   install:
     runtime-versions:
         nodejs: 10
+  pre_build:
     commands:
-        - echo Installing source NPM dependencies...
-        - npm install
-        - npm install -g @angular/cli
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli
   build:
     commands:
-        - echo Build started 
-        - ng build
+      - echo Build started 
+      - ng build
 artifacts:
     files:
         - '**/*'
     base-directory: 'dist/Angular8JwtAuth*'
-    discard-paths: yes
+    discard-paths: no
