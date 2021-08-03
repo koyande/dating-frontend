@@ -9,7 +9,6 @@ phases:
   install:
     runtime-versions:
         nodejs: 10
-  pre_build:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
@@ -21,4 +20,6 @@ phases:
 artifacts:
     files:
         - '**/*'
+    base-directory: 'dist*'
+    discard-paths: yes
     
